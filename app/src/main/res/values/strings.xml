@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ui1</string>
+    <string name="select">Select Item</string>
+    <string-array name="dropdown_options">
+        <item>Select WorkType</item>
+        <item>Field Worker</item>
+        <item>Corporate Employee</item>
+
+        <!-- Add more options as needed -->
+    </string-array>
+</resources>
