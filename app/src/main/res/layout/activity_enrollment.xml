@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/top_background_color"
-    tools:context=".LoginActivity">
+    tools:context=".enrollmentActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"
@@ -20,7 +20,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:contentDescription="Navigate back to home"
         android:textAlignment="center"
         app:backgroundTint="#DCF6EFF1"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
@@ -72,82 +71,48 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="358dp"
-                android:layout_height="65dp"
-                android:background="@drawable/edit_text_background"
-                android:drawableLeft="@drawable/baseline_email_24"
-                android:drawablePadding="40dp"
-                android:drawableTint="@color/app_theme"
-                android:ems="10"
-                android:hint="Enter Email"
-                android:inputType="text"
-                android:padding="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.169" />
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="358dp"
-                android:layout_height="65dp"
-                android:background="@drawable/edit_text_background"
-                android:drawableLeft="@drawable/baseline_lock_24"
-                android:drawablePadding="40dp"
-                android:drawableTint="@color/app_theme"
-                android:ems="10"
-                android:hint="Enter Password"
-                android:inputType="textPassword"
-                android:padding="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.34" />
-
             <TextView
-                android:id="@+id/textView2"
-                android:layout_width="197dp"
-                android:layout_height="33dp"
-                android:text="Forgot Password"
+                android:id="@+id/enrollMsg"
+                android:layout_width="318dp"
+                android:layout_height="99dp"
+                android:text="You are not enrolled yet as employee of this organization please wait until approval from admin."
                 android:textAlignment="center"
                 android:textColor="@color/app_theme"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.47" />
-
-            <TextView
-                android:id="@+id/btnreg"
-                android:layout_width="123dp"
-                android:layout_height="31dp"
-                android:text="Register Now"
-                android:textAlignment="center"
-                android:textColor="@color/app_theme"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.758" />
+                app:layout_constraintVertical_bias="0.296" />
 
             <Button
-                android:id="@+id/Login1"
-                android:layout_width="117dp"
-                android:layout_height="64dp"
-                android:backgroundTint="@color/app_theme"
-                android:text="Login"
+                android:id="@+id/extBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="108dp"
+                android:text="Exit App"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.621" />
+                app:layout_constraintTop_toBottomOf="@+id/enrollMsg"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/logOutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Not your credentials?"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/extBtn"
+                app:layout_constraintVertical_bias="0.072" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,14 +6,23 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
+import eu.tutorials.ui1.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
+
+
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+
+
         val floatingActionButton: FloatingActionButton = findViewById(R.id.backtohome)
 
         floatingActionButton.setOnClickListener {
